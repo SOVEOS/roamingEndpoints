@@ -103,7 +103,7 @@ function getTheNode() {
 
 const sortedEndpoints = await getFastestEndpoints();
 topEndpoints = sortedEndpoints.slice(0, 8).map((endpoint) => endpoint.url); //use slice to decide how many of the endpoints you want to use, here i have it set to 8
-console.log(topEndpoints); //always nice to see list of fasterst responding nodes for your connection
+console.log(topEndpoints); //always nice to see list of fastest responding nodes for your connection
 let endpointIndex = 0;
 
 // if you want to use a loop to cycle through sequentially, sets it to the fastest endoint first and then cycles sequentially each time loop iterates..
